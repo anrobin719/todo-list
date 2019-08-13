@@ -1,0 +1,45 @@
+@import '../../styles/utils.scss';
+
+.todo-input {
+    border-top: 1px solid $oc-gray-2;
+    border-bottom: 1px solid $oc-gray-2;
+    display: flex;
+    padding: 1rem;
+
+    input {
+        flex: 1;
+        font-size: 1.1rem;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $oc-gray-4;
+        background-color: transparent;
+        transition: all .2s linear;
+        
+        &:focus {
+            border-bottom: 1px solid $oc-cyan-6;
+        }
+    }
+
+    .add-button {
+        width: 5rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        border: 1px solid $oc-green-7;
+        color: $oc-green-7;
+        font-weight: 500;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all .2s ease-out;
+
+        &:hover {
+            background-color: $oc-green-7;
+            color: white;
+        }
+        &:active {
+            background-color: $oc-green-8;
+        }
+    }
+}
